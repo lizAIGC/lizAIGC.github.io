@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="CameraNoise: Learning Precise Camera Control with Video Diffusion in Noise Space">
+  <meta property="og:title" content="CameraNoise"/>
+  <meta property="og:description" content="CameraNoise: Learning Precise Camera Control with Video Diffusion in Noise Space"/>
+  <meta property="og:url" content="https://shouldershot.github.io/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+
+
+  <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG"> -->
+  <!-- <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- <meta name="twitter:image" content="assets/images/your_twitter_banner_image.png"> -->
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>CameraNoise</title>
+  <link href="static/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="assets/images/CameraNoise.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+
+<body>
+  <section class="section hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <span style="background: linear-gradient(to right, red, hotpink, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CameraNoise</span>: Learning Precise Camera Control with Video Diffusion in Noise Space
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">Anonymous submission</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+
+<!-- End teaser video -->
+
+<!-- ---------------- BEGIN Showcases SECTION ------------------>
+<!-- Video carousel -->
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container">
+      <!-- <h2 class="title is-3">Generated Over-the-Shoulder Dialogue Videos</h2> -->
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video style="max-width: 900px;" src="assets/est_cmp/b015d6c364730b46516ab23abc2d7282.mp4" controls></video>
+        </div>
+        <div class="item item-video1">
+          <video style="max-width: 900px;" src="assets/est_cmp/b015d6c364730b46516ab23abc2d7282.mp4" controls></video>
+        </div>
+        <div class="item item-video2">
+          <video style="max-width: 900px;" src="assets/est_cmp/b015d6c364730b46516ab23abc2d7282.mp4" controls></video>
+        </div>
+        <div class="item item-video3">
+          <video style="max-width: 900px;" src="assets/est_cmp/b015d6c364730b46516ab23abc2d7282.mp4" controls></video>
+        </div>
+      </div>
+      <span class="todo">[TODO #1]</span> We propose CameraNoise, a temporally coherent stochastic representation warped from the camera intrinsic and extrinsic parameters.
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+In this work, we aim to control the camera pose for video diffusion.
+In previous approaches, we find that the numerical values of camera parameters cannot achieve precise camera control, even lead to artifacts in the generated contents.
+To address this, we propose CameraNoise, a temporally coherent stochastic representation warped from the camera intrinsic and extrinsic parameters.
+It is a reflection of camera pose in the noise space, independent of scene appearance, which enables diffusion models to achieve controllable video generation with respect to arbitrary visual content.
+Specifically, we propose a novel CameraNoise warping algorithm.
+With the help of the proposed CameraNoise, we achieve high-fidelity camera control in diffusion models with stable and high-quality videos.
+          </p>
+          <!-- <img style="max-width: 400px; display: block; margin: 0 auto;" src="assets/figs/ots.png" /> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Video carousel2 -->
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #2]</span> Camera Controllable Imaeg-to-Video (I2V) Generation</h2>
+      
+      <div id="results-carousel" class="carousel results-carousel">
+        <!-- begin cmp -->
+        <div class="item item-video1">
+          <video  width="900" src="assets/i2v_results/55b7f65b41a356c93183dde735b1210c.mov" loop controls muted></video>
+        </div>
+        <!-- begin cmp -->
+        <div class="item item-video2">
+          <video preload="none" width="900" src="assets/i2v_results/55b7f65b41a356c93183dde735b1210c.mov" loop controls muted></video>
+        </div>
+      </div>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span class="todo">[TODO #3]</span> Videos: Comparision of dialogue videos generated by MoCha and our method. Our method generates longer, multi-turn dialogue videos compared to MoCha. We use lip-sync from <a href="https://cloud.tencent.com/document/product/1240/116222">Tencent Cloud</a> and <a href="https://github.com/FunAudioLLM/CosyVoice">CosyVoise</a> for Text-to-Speech (TTS).
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #4]</span> Camera Controllable Text-to-Video (T2V) Generation</h2>
+
+      <div id="results-carousel" class="carousel results-carousel">
+        <!-- begin cmp -->
+        <div class="item item-video1">
+          <video  width="900" src="assets/t2v_results/8d49b46ca851171ae5d4ce1235addb98.mov" loop controls muted></video>
+        </div>
+        <!-- begin cmp -->
+        <div class="item item-video2">
+          <video preload="none" width="900" src="assets/t2v_results/8d49b46ca851171ae5d4ce1235addb98.mov" loop controls muted></video>
+        </div>
+      </div>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span class="todo">[TODO #5]</span> Videos: Comparison of dual-shot over-the-shoulder images generated by existing methods and our results. (a) Mocha, (b) In-Context LoRA, (c) GPT-4o, (d) Ours. Our result shows better character consistency and shot layout.
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel2 -->
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  <script>
+    const videoContainer = document.querySelector('.video-container');
+    const video = document.querySelector('video');
+    const hoverImage = document.querySelector('.hover-image');
+    const caption = document.querySelector('.caption');
+    
+    videoContainer.addEventListener('mouseenter', () => {
+    // video.pause();
+    hoverImage.style.display = 'block';
+    caption.style.display = 'block';
+  });
+  
+  videoContainer.addEventListener('mouseleave', () => {
+        // video.play();
+        hoverImage.style.display = 'none';
+        caption.style.display = 'none';
+    });
+
+    </script>
+  </html>
