@@ -105,12 +105,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-In this work, we aim to control the camera pose for video diffusion.
-In previous approaches, we find that the numerical values of camera parameters cannot achieve precise camera control, even lead to artifacts in the generated contents.
-To address this, we propose CameraNoise, a temporally coherent stochastic representation warped from the camera intrinsic and extrinsic parameters.
-It is a reflection of camera pose in the noise space, independent of scene appearance, which enables diffusion models to achieve controllable video generation with respect to arbitrary visual content.
-Specifically, we propose a novel CameraNoise warping algorithm.
-With the help of the proposed CameraNoise, we achieve high-fidelity camera control in diffusion models with stable and high-quality videos.
+Controlling camera pose in video diffusion models is essential for generating realistic videos, yet existing approaches struggle to achieve precise control. Methods that directly inject numerical camera parameters into the diffusion backbone often fail to capture subtle viewpoint variations and lead to structural distortions or visual artifacts. To overcome these limitations, we propose CameraNoise, a temporally coherent stochastic representation warped from camera intrinsic and extrinsic parameters. Unlike conventional approaches, CameraNoise embeds camera poses directly into the noise space. This makes our approach independent of scene appearance while faithfully encoding camera motion. Specifically, we introduce a novel Geometry-guided Reprojection Flow along with a CameraNoise warping algorithm, which jointly preserves the Gaussian prior of diffusion and ensures consistent noise propagation under camera transformations. By integrating CameraNoise into the diffusion process, our framework delivers stable and high-quality videos with precise camera control. Extensive experiments on the RealEstate10K benchmark demonstrate that our approach significantly outperforms prior methods in both fidelity and controllability.
           </p>
           <!-- <img style="max-width: 400px; display: block; margin: 0 auto;" src="assets/figs/ots.png" /> -->
         </div>
@@ -127,18 +122,48 @@ With the help of the proposed CameraNoise, we achieve high-fidelity camera contr
     <div class="container">
       <h2 class="title is-3"><span class="todo">[TODO #2]</span> Camera Controllable Imaeg-to-Video (I2V) Generation</h2>
       
-      <div id="results-carousel" class="carousel results-carousel">
-        <!-- begin cmp -->
-        <div class="item item-video1">
-          <video  width="900" src="assets/i2v_results/55b7f65b41a356c93183dde735b1210c.mov" loop controls muted></video>
-        </div>
-        <!-- begin cmp -->
-        <div class="item item-video2">
-          <video preload="none" width="900" src="assets/i2v_results/55b7f65b41a356c93183dde735b1210c.mov" loop controls muted></video>
-        </div>
-      </div>
+      <table class="video-table">
+        <!-- Row 1 -->
+        <tr>
+          <td><video src="assets/i2v_results/8f04f919b046336c_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/i2v_results/56ae4fff81255579_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/i2v_results/83ceef672f798063_RIGHT.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+          <td><video src="assets/i2v_results/93a8bf0ecd7eafcf_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/i2v_results/94e35563d865a2d6_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/i2v_results/3018aa8ad3eb5dca_RIGHT.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+          <td><video src="assets/i2v_results/7526c18f191bcc1a_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/i2v_results/6986840ead0c9e9d_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/i2v_results/23099812f662b3ec_RIGHT.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+          <td><video src="assets/i2v_results/bf756257ffdd0017_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/i2v_results/c45cab04c3b22166_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/i2v_results/dd1c1d26525a2a1b_RIGHT.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 5 -->
+        <tr>
+          <td><video src="assets/i2v_results/deb368fb90770550_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td>
+            <!-- Empty cell if not enough videos -->
+          </td>
+          <td>
+            <!-- Empty cell if not enough videos -->
+          </td>
+        </tr>
+      </table>
       <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
-        <span class="todo">[TODO #3]</span> Videos: Comparision of dialogue videos generated by MoCha and our method. Our method generates longer, multi-turn dialogue videos compared to MoCha. We use lip-sync from <a href="https://cloud.tencent.com/document/product/1240/116222">Tencent Cloud</a> and <a href="https://github.com/FunAudioLLM/CosyVoice">CosyVoise</a> for Text-to-Speech (TTS).
+        <span class="todo">[TODO #3]</span> Generated videos.
       </div>
     </div>
   </div>
@@ -149,18 +174,48 @@ With the help of the proposed CameraNoise, we achieve high-fidelity camera contr
     <div class="container">
       <h2 class="title is-3"><span class="todo">[TODO #4]</span> Camera Controllable Text-to-Video (T2V) Generation</h2>
 
-      <div id="results-carousel" class="carousel results-carousel">
-        <!-- begin cmp -->
-        <div class="item item-video1">
-          <video  width="900" src="assets/t2v_results/8d49b46ca851171ae5d4ce1235addb98.mov" loop controls muted></video>
-        </div>
-        <!-- begin cmp -->
-        <div class="item item-video2">
-          <video preload="none" width="900" src="assets/t2v_results/8d49b46ca851171ae5d4ce1235addb98.mov" loop controls muted></video>
-        </div>
-      </div>
+      <table class="video-table">
+        <!-- Row 1 -->
+        <tr>
+          <td><video src="assets/t2v_results/1758356988_Image_e7020d449f50c737_Camera_e7020d449f50c737_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/t2v_results/1758359463_Image_dd1c1d26525a2a1b_Camera_dd1c1d26525a2a1b_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/t2v_results/1758359720_Image_deb368fb90770550_Camera_deb368fb90770550_RIGHT.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+          <td><video src="assets/t2v_results/1758360303_Image_4881a65d7476d6dd_Camera_4881a65d7476d6dd_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/t2v_results/1758360758_Image_d35f508ebd80e610_Camera_d35f508ebd80e610_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/t2v_results/1758362323_Image_94e35563d865a2d6_Camera_94e35563d865a2d6_RIGHT.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+          <td><video src="assets/t2v_results/1758362852_Image_1b2937e192040745_Camera_1b2937e192040745_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/t2v_results/1758363480_Image_dd5288bacc7da7cf_Camera_dd5288bacc7da7cf_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/t2v_results/1758363694_Image_2f7f2369486cc959_Camera_2f7f2369486cc959_RIGHT.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+          <td><video src="assets/t2v_results/1758364115_Image_5151d3969e328df1_Camera_5151d3969e328df1_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/t2v_results/1758365812_Image_645cc7949386d427_Camera_645cc7949386d427_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/t2v_results/1758366227_Image_a552d52c34c2c920_Camera_a552d52c34c2c920_RIGHT.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 5 -->
+        <tr>
+          <td><video src="assets/t2v_results/1758368084_Image_c3c33ceed1308b42_Camera_c3c33ceed1308b42_RIGHT.mp4" loop controls muted autoplay></video></td>
+          <td>
+            <!-- Empty cell if not enough videos -->
+          </td>
+          <td>
+            <!-- Empty cell if not enough videos -->
+          </td>
+        </tr>
+      </table>
       <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
-        <span class="todo">[TODO #5]</span> Videos: Comparison of dual-shot over-the-shoulder images generated by existing methods and our results. (a) Mocha, (b) In-Context LoRA, (c) GPT-4o, (d) Ours. Our result shows better character consistency and shot layout.
+        <span class="todo">[TODO #5]</span> Generated videos.
       </div>
       </div>
     </div>
@@ -204,22 +259,5 @@ With the help of the proposed CameraNoise, we achieve high-fidelity camera contr
 
   </body>
   <script>
-    const videoContainer = document.querySelector('.video-container');
-    const video = document.querySelector('video');
-    const hoverImage = document.querySelector('.hover-image');
-    const caption = document.querySelector('.caption');
-    
-    videoContainer.addEventListener('mouseenter', () => {
-    // video.pause();
-    hoverImage.style.display = 'block';
-    caption.style.display = 'block';
-  });
-  
-  videoContainer.addEventListener('mouseleave', () => {
-        // video.play();
-        hoverImage.style.display = 'none';
-        caption.style.display = 'none';
-    });
-
-    </script>
-  </html>
+  </script>
+</html>

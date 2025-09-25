@@ -135,5 +135,10 @@ body {
 
 .todo {
   color: red;
+  display: none;
 }
 
+.video-table {
+  max-width: 1000px;
+  margin: auto;
+}
