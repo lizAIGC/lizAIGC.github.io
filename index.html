@@ -113,12 +113,230 @@
               <!-- Paper authors -->
               <span class="author-block">Anonymous submission</span>
             </div>
+            <p>* This project page contains a large number of videos, please wait patiently for them to load.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+
+<nav id="toc">
+  <ul>
+    <li><a href="#section1"><b>Table of Contents</b></a></li>
+    <li><a href="#section_rebuttal1"><span style="color: #e67e22;">New: Rebuttal-A</span></a></li>
+    <li><a href="#section_rebuttal2"><span style="color: #e67e22;">New: Rebuttal-B</span></a></li>
+    <li><a href="#section_rebuttal3"><span style="color: #e67e22;">New: Rebuttal-C</span></a></li>
+    <li><a href="#section_rebuttal4"><span style="color: #e67e22;">New: Rebuttal-D</span></a></li>
+    <li><a href="#section_rebuttal5"><span style="color: #e67e22;">New: Rebuttal-E</span></a></li>
+    <li><a href="#section_rebuttal6"><span style="color: #e67e22;">New: Rebuttal-F</span></a></li>
+    <li><a href="#section1">1. I2V Generation</a></li>
+    <li><a href="#section2">2. CameraNoise</a></li>
+    <li><a href="#section3">3. More I2V Results</a></li>
+    <li><a href="#section4">4. T2V Generation</a></li>
+    <li><a href="#section5">5. More T2V Results</a></li>
+    <li><a href="#section6">6. Framework</a></li>
+    <li><a href="#section7">7. GRFlow</a></li>
+    <li><a href="#section8">8. Optical flow</a></li>
+  </ul>
+</nav>
+
+
+<!-- Video carousel2 -->
+<section class="section hero is-light" id="section_rebuttal1">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #2]</span><span style="color: #e67e22;">Rebuttal-A:</span> Dynamic and ourdoor scenes with different camera poses.</h2>
+      
+      <p>Camera1: Move-Up Shot.</p>
+      <table class="video-table">
+        <tr>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case1.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case2.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case3.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case4.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+
+      <p>Camera2: Counterclockwise Rotation Shot.</p>
+      <table class="video-table">
+        <tr>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case5.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case6.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case7.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case8.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+      
+      <p>Camera3: Move-Down Shot.</p>
+      <table class="video-table">
+        <tr>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case9.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case10.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case11.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/dynamic_scene/dynamic_case12.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span>We demonstrate <b>dynamic results across multiple scenes</b> under three different types of camera motion. Given a reference image, camera poses, and textual descriptions, our model is able to generate the corresponding dynamic scenes.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video carousel2 -->
+<section class="section hero" id="section_rebuttal2">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #2]</span><span style="color: #e67e22;">Rebuttal-B:</span> Dynamic single scene across different camera poses.</h2>
+      
+      <p>Scene1: The video depicts a serene and vibrant forest scene.</p>
+      <table class="video-table">
+        <tr>
+          <td><video src="assets/rebuttal/camera_shots_1/camera_shot1_case1.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_1/camera_shot1_case2.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_1/camera_shot1_case3.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_1/camera_shot1_case4.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+        
+      <p>Scene2: The video depicts a serene and vibrant forest scene.</p>
+      <table class="video-table">
+        <tr>
+          <td><video src="assets/rebuttal/camera_shots_2/camera_shot2_case1.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_2/camera_shot2_case2.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_2/camera_shot2_case3.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_2/camera_shot2_case4.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+        
+      <p>Scene3: The video depicts a serene rural scene at sunset.</p>
+      <table class="video-table">
+        <tr>
+          <td><video src="assets/rebuttal/camera_shots_4/camera_shot4_case1.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_4/camera_shot4_case2.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_4/camera_shot4_case3.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/camera_shots_4/camera_shot4_case4.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+
+      </table>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span>We showcase the dynamic motion of the <b>same scene under different camera poses</b>, demonstrating that our model exhibits strong robustness across various scenes. The camera poses used are sourced from the MultiCamVideo dataset.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video carousel2 -->
+<section class="section hero is-light" id="section_rebuttal3">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #2]</span><span style="color: #e67e22;">Rebuttal-C:</span> Dynamic vehicle driving scene.</h2>
+      
+      <table class="video-table">
+        <!-- Row 1 -->
+        <tr>
+          <td><video src="assets/rebuttal/driving_scene/driving_case1.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case2.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case3.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case4.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+          <td><video src="assets/rebuttal/driving_scene/driving_case5.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case6.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case7.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case8.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+          <td><video src="assets/rebuttal/driving_scene/driving_case9.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case10.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case11.mp4" loop controls muted autoplay></video></td>
+          <td><video src="assets/rebuttal/driving_scene/driving_case12.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+      </table>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span>Vehicle driving scenarios are among the most challenging dynamic scenes. We test our model of image-to-video generation using data from the <b>DrivingDoJo dataset</b>, and the results show that it can effectively handle common driving situations, including daytime, nighttime, straight driving, and turning.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero" id="section_rebuttal4">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #2]</span><span style="color: #e67e22;">Rebuttal-D:</span> Camera pose transfer: source video to generated videos.</h2>
+      
+      <table class="video-table">
+        <tr>
+          <td><video src="assets/rebuttal/transfer_case/transfer_case_1.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <tr>
+          <td><video src="assets/rebuttal/transfer_case/transfer_case_2.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+      </table>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span>Given an input video, we can obtain its camera parameters using the VGGT model, and then convert these parameters into CameraNoise with our proposed algorithm to provide the model with camera control capability. We select two scenes from the MultiCamVideo dataset and transfer the camera motion under three different reference image conditions. <b>The results demonstrate that our model can achieve lossless transfer of camera motion from the input video.</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light" id="section_rebuttal5">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #2]</span><span style="color: #e67e22;">Rebuttal-E:</span> Comparison with previous State-of-the-Arts.</h2>
+      
+      <table class="video-table">
+        <tr>
+          <td><video src="assets/rebuttal/compared_with_others/compared_case1.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <tr>
+          <td><video src="assets/rebuttal/compared_with_others/compared_case3.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <tr>
+          <td><video src="assets/rebuttal/compared_with_others/compared_case5.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <tr>
+          <td><video src="assets/rebuttal/compared_with_others/compared_case4.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+      </table>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span class="todo">[TODO #3]</span> Since previous CameraCtrl, MotionCtrl, and Go-with-the-flow methods are trained on different datasets, we visualize their zero-shot results on the <b>MultiCamVideo dataset</b> to ensure a fair comparison. It is important to note that our focus is on controlling the camera motion in the scene, rather than dictating how the people within the scene move. GT means the ground truth.
+        <p><b>We observe that all these methods exhibit varying degrees of degradation when applied to new scenes:</b></p>
+        <p>1) CameraCtrl shows declines in both camera control accuracy and visual content quality;</p>
+        <p>2) MotionCtrl almost completely loses its camera control capability in the new scenes;</p>
+        <p>3) Go-with-the-Flow suffers from a noticeable drop in visual content quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero" id="section_rebuttal6">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #2]</span><span style="color: #e67e22;">Rebuttal-F:</span> Quantitative comparison on MultiCamVideo and Driving DoJo.</h2>
+      <img style="max-width: 800px; margin: 0 auto;" class="fit-picture" src="assets/rebuttal/more_datasets.png" alt="Grapefruit slice atop a pile of other slices" />
+      
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span>In addition to the RealEstate10K dataset, we compare our model with existing methods on the Image-to-Video task using the <b>MultiCamVideo and DrivingDoJo datasets</b>. Since these models are trained on different datasets, we perform <b>zero-shot experiments</b> on the two datasets. The results in the table show that our model still achieves superior performance.</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -137,21 +355,6 @@ Controlling camera pose in video diffusion models is essential for generating re
   </div>
 </section>
 <!-- End paper abstract -->
-
-
-<nav id="toc">
-  <ul>
-    <li><a href="#section1"><b>Table of Contents</b></a></li>
-    <li><a href="#section1">1. I2V Generation</a></li>
-    <li><a href="#section2">2. CameraNoise</a></li>
-    <li><a href="#section3">3. More I2V Results</a></li>
-    <li><a href="#section4">4. T2V Generation</a></li>
-    <li><a href="#section5">5. More T2V Results</a></li>
-    <li><a href="#section6">6. Framework</a></li>
-    <li><a href="#section7">7. GRFlow</a></li>
-    <li><a href="#section8">8. Optical flow</a></li>
-  </ul>
-</nav>
 
 
 <section class="section hero" id="section1">
