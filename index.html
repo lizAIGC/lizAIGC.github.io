@@ -129,6 +129,8 @@
     <li><a href="#section_rebuttal4"><span style="color: #e67e22;">New: Rebuttal-D</span></a></li>
     <li><a href="#section_rebuttal5"><span style="color: #e67e22;">New: Rebuttal-E</span></a></li>
     <li><a href="#section_rebuttal6"><span style="color: #e67e22;">New: Rebuttal-F</span></a></li>
+    <li><a href="#section_rebuttal7"><span style="color: green;">New: Rebuttal-G</span></a></li>
+    <li><a href="#section_rebuttal8"><span style="color: green;">New: Rebuttal-H</span></a></li>
     <li><a href="#section1">1. I2V Generation</a></li>
     <li><a href="#section2">2. CameraNoise</a></li>
     <li><a href="#section3">3. More I2V Results</a></li>
@@ -190,7 +192,7 @@
     <div class="container">
       <h2 class="title is-3"><span class="todo">[TODO #2]</span><span style="color: #e67e22;">Rebuttal-B:</span> Dynamic single scene across different camera poses.</h2>
       
-      <p>Scene1: The video depicts a serene and vibrant forest scene.</p>
+      <p>Scene1: A vibrant forest scene is filled with various birds flying, surrounded by trees, green mossy ground, and sunlight.</p>
       <table class="video-table">
         <tr>
           <td><video src="assets/rebuttal/camera_shots_1/camera_shot1_case1.mp4" loop controls muted autoplay></video></td>
@@ -200,7 +202,7 @@
         </tr>
       </table>
         
-      <p>Scene2: The video depicts a serene and vibrant forest scene.</p>
+      <p>Scene2: A golden retriever stands in a sunlit grassy field, with trees and open green space in the background.</p>
       <table class="video-table">
         <tr>
           <td><video src="assets/rebuttal/camera_shots_2/camera_shot2_case1.mp4" loop controls muted autoplay></video></td>
@@ -210,7 +212,7 @@
         </tr>
       </table>
         
-      <p>Scene3: The video depicts a serene rural scene at sunset.</p>
+      <p>Scene3: A cowboy rides a horse along a winding dirt road through a golden and sunlit field with fences.</p>
       <table class="video-table">
         <tr>
           <td><video src="assets/rebuttal/camera_shots_4/camera_shot4_case1.mp4" loop controls muted autoplay></video></td>
@@ -331,11 +333,92 @@
       <img style="max-width: 800px; margin: 0 auto;" class="fit-picture" src="assets/rebuttal/more_datasets.png" alt="Grapefruit slice atop a pile of other slices" />
       
       <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
-        <span>In addition to the RealEstate10K dataset, we compare our model with existing methods on the Image-to-Video task using the <b>MultiCamVideo and DrivingDoJo datasets</b>. Since these models are trained on different datasets, we perform <b>zero-shot experiments</b> on the two datasets. The results in the table show that our model still achieves superior performance.</span>
+        <span>In addition to the RealEstate10K dataset, we compare our model with existing methods on the Image-to-Video task using the <b>MultiCamVideo and DrivingDoJo datasets</b>. Since these models are trained on different datasets, we perform <b>zero-shot experiments</b> on the two datasets. The results in the table show that our model still achieves superior performance. <b>The optimal result is bolded, and the suboptimal result is underlined.</b></span>
       </div>
     </div>
   </div>
 </section>
+
+<section class="section hero is-light" id="section_rebuttal7">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span style="color: green;">Rebuttal-G:</span> Comparison with State-of-the-Arts under OOD scenarios.</h2>
+      
+      <table class="video-table" style="max-width: 1300px; margin: auto; width: 100%; table-layout: fixed;">
+        <tr>
+          <td><video src="assets/rebuttal/ood_cases/ood_case2.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+      <p>Camera pose type 1: <span style="color: #e67e22;">move-up shot</span>.</p>
+
+      
+      <table class="video-table" style="max-width: 1300px; margin: auto; width: 100%; table-layout: fixed;">
+        <tr>
+          <td><video src="assets/rebuttal/ood_cases/ood_case3.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+      <p>Camera pose type 2: <span style="color: #e67e22;">move-down shot</span>.</p>
+
+      
+      <table class="video-table" style="max-width: 1300px; margin: auto; width: 100%; table-layout: fixed;">
+        <tr>
+          <td><video src="assets/rebuttal/ood_cases/ood_case4.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+      <p>Camera pose type 3: <span style="color: #e67e22;">move-left shot</span>.</p>
+      
+      
+      <table class="video-table" style="max-width: 1300px; margin: auto; width: 100%; table-layout: fixed;">
+        <tr>
+          <td><video src="assets/rebuttal/ood_cases/ood_case1.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+      <p>Camera pose type 4: <span style="color: #e67e22;">move-right shot</span>.</p>
+
+      
+      <table class="video-table" style="max-width: 1300px; margin: auto; width: 100%; table-layout: fixed;">
+        <tr>
+          <td><video src="assets/rebuttal/ood_cases/ood_case5.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+      <p>Camera pose type 5: <span style="color: #e67e22;">move-clockwise shot</span>.</p>
+
+      
+      <table class="video-table" style="max-width: 1300px; margin: auto; width: 100%; table-layout: fixed;">
+        <tr>
+          <td><video src="assets/rebuttal/ood_cases/ood_case6.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+      <p>Camera pose type 6: <span style="color: #e67e22;">move-in shot</span>.</p>
+
+      </table>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <br>
+        <span>We evaluate methods MotionCtrl, CameraCtrl, Go-with-the-Flow, GEN3C, and our CameraNoise in six typical out-of-distribution (OOD) scenarios: valleys, fields, lakes, deserts, forests, and amusement parks (see the reference images in the first column). For each scene, we test these methods using six representative camera motions provided by GEN3C.</span>
+        <p><b>Based on these results, we summarize the characteristics and limitations of current mainstream methods under OOD conditions:</b></p>
+        <p>1) MotionCtrl and CameraCtrl: exhibit large deviations in camera following, indicating limited robustness in camera control;</p>
+        <p>2) Go-with-the-Flow: prone to excessive camera motion and occasional content collapse;</p>
+        <p>3) GEN3C: produces static scenes where objects cannot move, resulting in rigid video content. Additionally, due to its reliance on 3D feature modeling, it is susceptible to scene penetration issues (e.g., camera pose 5);</p>
+        <p><b>4) Our method: demonstrates superior performance in OOD scenarios in terms of camera control accuracy, content consistency, and motion dynamics.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero" id="section_rebuttal8">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span class="todo">[TODO #2]</span><span style="color: green;">Rebuttal-H:</span> Quantitative comparison on OOD scenarios.</h2>
+      <img style="max-width: 800px; margin: 0 auto;" class="fit-picture" src="assets/rebuttal/ood_comparison.png" alt="Grapefruit slice atop a pile of other slices" />
+      
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <span>Apart from the visual results, we also conduct a quantitative analysis of these videos in Rebuttal-G generated by these methods using VBench. <b>The results show consistent performance in both quantitative and qualitative evaluations, fully demonstrating the superiority of our method.</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
