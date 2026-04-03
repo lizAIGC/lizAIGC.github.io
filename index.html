@@ -123,6 +123,8 @@
 <nav id="toc">
   <ul>
     <li><a href="#section1"><b>Table of Contents</b></a></li>
+    <li><a href="#section_re_A"><span style="color: red;">Rebuttal-A. Dynamic</span></a></li>
+    <li><a href="#section_re_B"><span style="color: red;">Rebuttal-B. Noise</span></a></li>
     <li><a href="#section1">1. I2V Generation</a></li>
     <li><a href="#section2">2. CameraNoise</a></li>
     <li><a href="#section3">3. More I2V Results</a></li>
@@ -139,6 +141,76 @@
     <li><a href="#section14">14. OOD compare 2</a></li>
   </ul>
 </nav>
+
+<section class="section hero is-light" id="section_re_A">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span style="color: red;">Rebuttal-A.</span> Dynamic and longer videos under complex and static cameras.</h2>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <b>A.1</b> In the three examples below, we demonstrate the model's ability to generate dynamic videos under complex camera motion. All three videos use the same CameraNoise camera trajectory. Compared with the original 2-second setting, we <span style="color: red;">directly generate longer 4-second videos</span> to further verify the model's stability and dynamic performance in long-horizon generation. We choose <span style="color: red;">amusement park scenes</span> as representative examples to showcase the model's capability in dynamic scene generation.
+      </div>
+      <table class="video-table" >
+        <tr>
+          <td><video src="assets/dynamic/dynamic_videos.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <b>A.2</b> In the other three videos below, we further demonstrate the model's ability to generate dynamic videos in static scenes. These results highlight two key properties. First, in our model, <span style="color: red;">camera motion and object motion are not inherently coupled</span>: even under a static camera, the boat in the scene can still move naturally. Second, the motion state and speed of the object can be effectively controlled by text prompts, where different prompts lead to different speed patterns. This also shows that the model <span style="color: red;">is not limited to slow motion generation</span>, but can produce a broader range of dynamic behaviors.
+      </div>
+      <table class="video-table" >
+        <tr>
+          <td><video src="assets/dynamic/dynamic_speed.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        <br>
+        <p><b>Inference Prompts:</b></p>
+        <p>1) <b>Low speed:</b> a boat splashing down a steep water slope, huge arcs of water frozen in the air, wet rails, bright reflections.</p>
+        <p>2) <b>Medium speed:</b> a boat racing rapidly down a steep water slope, explosive arcs of water bursting into the air, wet rails, bright reflections.</p>
+        <p>3) <b>High speed:</b> a boat speeding down a steep water slope at high speed, massive splashes frozen in midair, wet rails, bright reflections.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero" id="section_re_B">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3"><span style="color: red;">Rebuttal-B.</span> CameraNoise warping with different values of pesudo-depth d.</h2>
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        We present the warping results of CameraNoise under different values of d. From these results, we can observe that smaller d values <span style="color: red;">amplify the camera motion</span>, while as d increases, the effectiveness of <span style="color: red;">push-in and pull-out camera movements degrades noticeably</span>, and rotation-based camera motions also introduce more visible artifacts. In practical scenarios, we find that d=0.5 performs best.
+      </div>
+      <table class="video-table" >
+        <tr>
+          <td><video src="assets/noise/1.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <tr>
+          <td><video src="assets/noise/2.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <tr>
+          <td><video src="assets/noise/4.mp4" loop controls muted autoplay></video></td>
+        </tr>
+
+        <tr>
+          <td><video src="assets/noise/3.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+
+      <div style="max-width: 1000px; margin: 0 auto;" class="has-text-justified">
+        We further evaluate the video generation results under large d values and select the push-in/pull-out camera motion, which is the most sensitive to d, as the test case, using the template from the "cat" video in the third row above. As shown, when d becomes large, CameraNoise can no longer be properly represented, and the generated videos therefore <span style="color: red;">fail to accurately express the intended push-in/pull-out motion.</span>
+      </div>
+      <table class="video-table" >
+        <tr>
+          <td><video src="assets/noise/noise_videos.mp4" loop controls muted autoplay></video></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
 
 
 <!-- Paper abstract -->
